@@ -1,6 +1,37 @@
 body {
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
+  color: #000;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+i {
+  margin-bottom: 30px;
+}
+
+.topbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: #319ce7;
+  position: fixed;
+}
+.topbar .topbar-title {
+  height: 80px;
+  width: 240px;
+  background: #319ce7;
   color: #fff;
+  position: fixed;
+  text-align: center;
+  line-height: 80px;;
+  left: 50%;
+  top: 15px;
+  font-size: 32px;
+  border-radius: 5px;
+  margin-left: -120px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
 #videoElem, .videoElem {
@@ -12,8 +43,13 @@ body {
 }
 
 .videoElem {
+  position: absolute;
   background: #000;
   display: none;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 .centerScreen {

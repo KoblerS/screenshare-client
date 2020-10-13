@@ -1,6 +1,6 @@
 {
   "name": "shared",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A minimal Electron application",
   "main": "./app/main.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "directories": {
       "buildResources": "build"
     },
-    "buildVersion": "${version}",
+    "buildVersion": "0.0.1",
     "mac": {
       "category": "public.app-category.utilities"
     },

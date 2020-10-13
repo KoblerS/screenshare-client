@@ -10,7 +10,7 @@ let activeCall = false;
 
 function connectPeer() {
   let randomCode = getRandomArbitrary();
-  $('#connectCode').text(randomCode);
+  $('.connectCode').text(randomCode);
 
   peer = new Peer(randomCode, {
     host: 'splitcast.io',
@@ -28,7 +28,9 @@ function connectPeer() {
 
     call.on('stream', function (stream) {
       videoElem.srcObject = stream;
-      $('.videoElem').fadeIn(400);
+      console.log(stream);
+      $('.videoElem').show();
+      $('.row').hide();
 
       videoElem.onpause = function () {
         closedConnection();
@@ -69,6 +71,7 @@ function connectPeer() {
 
 function closedConnection() {
   $('.videoElem').hide();
+  $('.row').show();
   peer.destroy();
   peer = null;
   activeCall = false;

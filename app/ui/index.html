@@ -4,15 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <link href="css/style.css" rel="stylesheet" />
+  <link href="css/fonts.css" rel="stylesheet" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/fontawesome.min.css" rel="stylesheet" />
 
   <title>Splitcast Screenshare</title>
 </head>
 
 <body>
-  <div class="centerScreen">
-    <h1 class="title">Splitcast</h1>
-    <h3 class="subtitle">Gehe auf http://splitcast.io und gib den folgenden Code ein:</h3>
-    <h1 id="connectCode">12345</h1>
+  <div class="topbar">
+    <div class="topbar-title">
+      Splitcast.io
+    </div>
+  </div>
+
+  <div class="row" style="height: 100vh;">
+    <div class="col-2 offset-2 align-self-center">
+      <div class="text-center">
+        <i class="fa fa-desktop" style="font-size: 80px;"></i>
+        <h3><span class="badge badge-secondary">Gehe auf www.splitcast.io</span></h3>
+      </div>
+    </div>
+    <div class="col-1 align-self-center">
+      <div class="text-center">
+        <i class="fa fa-chevron-right" style="font-size: 60px;"></i>
+      </div>
+    </div>
+    <div class="col-2 align-self-center">
+      <div class="text-center">
+        <i class="fa fa-keyboard" style="font-size: 80px;"></i>
+        <h3><span class="badge badge-secondary">Gib den Code <b class="connectCode"></b> ein</span></h3>
+      </div>
+    </div>
+    <div class="col-1 align-self-center">
+      <div class="text-center">
+        <i class="fa fa-chevron-right" style="font-size: 60px;"></i>
+      </div>
+    </div>
+    <div class="col-2 align-self-center">
+      <div class="text-center">
+        <i class="fa fa-mouse-pointer" style="font-size: 80px;"></i>
+        <h3><span class="badge badge-secondary">Klicke auf verbinden</span></h3>
+      </div>
+    </div>
   </div>
   <div class="videoElem">
     <video id="videoElem" autoplay playsinline></video>
@@ -20,6 +54,7 @@
 
   <script src="js/peerjs.min.js" type="text/javascript"></script>
   <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
   <script src="js/script.js" type="text/javascript"></script>
 </body>
 

@@ -9,10 +9,11 @@ function createWindow() {
     width: 800,
     height: 600,
     fullscreen: true,
+    frame: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     },
-    backgroundColor: '#319ce7'
+    backgroundColor: '#fff'
   });
 
   mainWindow.maximize();
@@ -40,6 +41,7 @@ app.whenReady().then(() => {
 app.commandLine.appendSwitch('ignore-certificate-errors', 'true');
 app.commandLine.appendSwitch('high-dpi-support', 'true');
 app.commandLine.appendSwitch('force-device-scale-factor', '1');
+app.commandLine.appendSwitch('disable-gpu');
 
 // Quit when all windows are closed, except on macOS. There, it's common
 // for applications and their menu bar to stay active until the user quits
